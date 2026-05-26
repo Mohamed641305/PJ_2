@@ -43,7 +43,7 @@
                             <td>{{ $student->id }}</td>
                             <td>{{ $student->name }}</td>
                             <td>{{ $student->email }}</td>
-                            <td>{{ $student->phone ?? '-' }}</td>
+                            <td>{{ $student->phone_number ?? '-' }}</td>
                             <td>{{ $student->address ?? '-' }}</td>
                             <td>
                                 @if ($student->status == 'active')
@@ -55,6 +55,8 @@
                             <td>
                                 <a href="{{ route('admin.students.show', $student->id) }}"
                                     class="btn btn-sm btn-info me-1">Show</a>
+                                <a href="{{ route('admin.students.edit', $student->id) }}"
+                                    class="btn btn-sm btn-warning me-1">Edit</a>
                                 <a href="{{ route('admin.students.delete', $student->id) }}"
                                     onclick="return confirm('Are you sure you want to delete this student?');"
                                     class="btn btn-sm btn-danger">Delete</a>

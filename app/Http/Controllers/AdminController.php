@@ -54,6 +54,43 @@ class AdminController extends Controller
         return view('admin.students.show', ['student' => $student]);
     }
 
+    // Edit student
+    public function editStudent(User $student)
+    {
+        if ($student->role !== 'student') {
+            abort(404);
+        }
+
+        return view('admin.students.edit', ['student' => $student]);
+    }
+
+    // Update student
+    public function updateStudent(Request $request, User $student)
+    {
+        if ($student->role !== 'student') {
+            abort(404);
+        }
+
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users,email,' . $student->id,
+            'phone_number' => ['required', 'regex:/^([0-9\s\-\+\(\)]*)$/', 'min:11'],
+            'address' => 'nullable|string|max:255',
+            'status' => 'required|in:active,block',
+        ]);
+
+        $student->update([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'phone_number' => $validated['phone_number'],
+            'address' => $validated['address'] ?? null,
+            'status' => $validated['status'],
+        ]);
+
+        return redirect()->route('admin.students.show', $student->id)
+            ->with('success', 'Student updated successfully.');
+    }
+
     // Delete student
     public function deleteStudent(User $student)
     {

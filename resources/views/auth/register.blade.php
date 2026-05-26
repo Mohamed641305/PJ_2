@@ -35,6 +35,16 @@
                             </div>
 
                             <div class="mb-3">
+                                <label for="phone_number" class="form-label">Phone Number</label>
+                                <input id="phone_number" type="text"
+                                    class="form-control @error('phone_number') is-invalid @enderror" name="phone_number"
+                                    value="{{ old('phone_number') }}" required>
+                                @error('phone_number')
+                                    <span class="text-danger small">{{ $message }}</span>
+                                @enderror
+                            </div>
+
+                            <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password" required>
@@ -47,6 +57,16 @@
                                 <label for="password_confirmation" class="form-label">Confirm Password</label>
                                 <input id="password_confirmation" type="password" class="form-control"
                                     name="password_confirmation" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input id="address" type="text"
+                                    class="form-control @error('address') is-invalid @enderror" name="address"
+                                    value="{{ old('address') }}" required>
+                                @error('address')
+                                    <span class="text-danger small">{{ $message }}</span>
+                                @enderror
                             </div>
 
                             <!-- حقل رفع الصورة -->

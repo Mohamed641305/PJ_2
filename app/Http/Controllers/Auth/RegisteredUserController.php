@@ -30,7 +30,9 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:users,email'],
+            'phone_number' => ['required', 'regex:/^([0-9\s\-\+\(\)]*)$/', 'min:11'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
+            'address' => ['required', 'string', 'max:255'],
             'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
@@ -47,7 +49,9 @@ class RegisteredUserController extends Controller
         $user = User::create([
             'name'     => $request->name,
             'email'    => $request->email,
+            'phone_number' => $request->phone_number,
             'password' => Hash::make($request->password),
+            'address'  => $request->address,
             'role'     => 'student',
             'profile_image'    => $imageName, // هنا حفظنا الصورة في قاعدة البيانات
         ]);

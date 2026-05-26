@@ -66,6 +66,11 @@ Route::prefix('admin')
         Route::get('/students/show/{student}', [AdminController::class, 'showStudent'])
             ->name('students.show');
 
+        Route::get('/students/{student}/edit', [AdminController::class, 'editStudent'])
+            ->name('students.edit');
+        Route::put('/students/{student}', [AdminController::class, 'updateStudent'])
+            ->name('students.update');
+
         Route::get('/students/delete/{student}', [AdminController::class, 'deleteStudent'])
             ->name('students.delete');
 

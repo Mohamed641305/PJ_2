@@ -15,11 +15,11 @@
                             @csrf
 
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input id="email" type="email"
-                                    class="form-control @error('email') is-invalid @enderror" name="email"
-                                    value="{{ old('email') }}" required autofocus>
-                                @error('email')
+                                <label for="login" class="form-label">Email or Phone Number</label>
+                                <input id="login" type="text"
+                                    class="form-control @error('login') is-invalid @enderror" name="login"
+                                    value="{{ old('login') }}" required autofocus>
+                                @error('login')
                                     <span class="text-danger small">{{ $message }}</span>
                                 @enderror
                             </div>
