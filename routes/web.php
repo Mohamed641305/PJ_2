@@ -35,6 +35,11 @@ Route::middleware(['auth'])->group(function () {
         return redirect()->route('welcome');
     })->name('dashboard');
 
+    // Profile routes
+    Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [App\Http\Controllers\ProfileController::class, 'destroy'])->name('profile.destroy');
+
     Route::view('/about', 'about')->name('about');
     Route::view('/courses', 'courses')->name('courses');
     Route::view('/team', 'team')->name('team');

@@ -27,7 +27,8 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'login' => ['required', 'string'],
+            'login' => ['nullable', 'string'],
+            'email' => ['nullable', 'string'],
             'password' => ['required', 'string'],
         ];
     }
@@ -41,7 +42,7 @@ class LoginRequest extends FormRequest
     {
         $this->ensureIsNotRateLimited();
 
-        $login = $this->string('login');
+        $login = $this->input('login') ?? $this->input('email');
         $field = filter_var($login, FILTER_VALIDATE_EMAIL) ? 'email' : 'phone_number';
         $credentials = [$field => $login, 'password' => $this->string('password')];
 

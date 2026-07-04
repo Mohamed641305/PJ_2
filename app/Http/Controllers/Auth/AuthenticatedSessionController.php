@@ -26,13 +26,13 @@ class AuthenticatedSessionController extends Controller
 
         $user = Auth::user();
 
-        // لو Admin يرجع للموقع
+        // لو Admin يرجع للدashboard الخاص بالأدمن
         if ($user->role === 'admin') {
-            return redirect()->intended(route('welcome'));
+            return redirect()->intended(route('admin.dashboard'));
         }
 
         // لو Student يروح dashboard
-        return redirect()->intended(route('welcome'));
+        return redirect()->intended(route('dashboard'));
     }
 
 
