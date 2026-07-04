@@ -36,7 +36,7 @@
                             <td>{{ $result->status }}</td>
                             <td>{{ $result->created_at }}</td>
                             <td>
-                                <a href={{ route('home') }} class="btn btn-success">
+                                <a href="{{ route('home') }}" class="btn btn-success">
                                     <i class="fa-solid fa-house"></i>
                                 </a>
                             </td>

@@ -40,13 +40,13 @@
                                         <td>{{ $item->role }}</td>
                                         <td>{{ $item->status }}</td>
                                         <td>
-                                            <a href={{ route('user.show', $item->id) }} class="btn btn-success">
+                                            <a href="{{ route('user.show', $item->id) }}" class="btn btn-success">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href={{ route('user.edit', $item->id) }} class="btn btn-primary">
+                                            <a href="{{ route('user.edit', $item->id) }}" class="btn btn-primary">
                                                 <i class="fa-solid fa-pen-to-square"></i>
                                             </a>
-                                            <a href={{ route('user.delete', $item->id) }} class="btn btn-danger">
+                                            <a href="{{ route('user.delete', $item->id) }}" class="btn btn-danger">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </td>

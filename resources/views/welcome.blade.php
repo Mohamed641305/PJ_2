@@ -20,9 +20,9 @@
                                     sed stet sit diam no. Kasd rebum ipsum
                                     et diam justo clita et kasd rebum sea
                                     sanctus eirmod elitr.</p>
-                                <a href class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
                                     More</a>
-                                <a href={{ route('login') }} class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join
+                                <a href="{{ route('login') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join
                                     Now</a>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                                     sed stet sit diam no. Kasd rebum ipsum
                                     et diam justo clita et kasd rebum sea
                                     sanctus eirmod elitr.</p>
-                                <a href class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
                                     More</a>
                                 <a href class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join
                                     Now</a>
@@ -154,7 +154,7 @@
                                 Certificate</p>
                         </div>
                     </div>
-                    <a class="px-5 py-3 mt-2 btn btn-primary" href>Read
+                    <a class="px-5 py-3 mt-2 btn btn-primary" href="#">Read
                         More</a>
                 </div>
             </div>
@@ -173,7 +173,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="overflow-hidden position-relative d-block" href>
+                            <a class="overflow-hidden position-relative d-block" href="#">
                                 <img class="img-fluid" src="{{ asset('img/cat-1.jpg') }}" alt="Category 1">
                                 <div class="bottom-0 px-3 py-2 text-center bg-white position-absolute end-0"
                                     style="margin: 1px;">
@@ -184,7 +184,7 @@
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="overflow-hidden position-relative d-block" href>
+                            <a class="overflow-hidden position-relative d-block" href="#">
                                 <img class="img-fluid" src="{{ asset('img/cat-2.jpg') }}" alt="Category 2">
                                 <div class="bottom-0 px-3 py-2 text-center bg-white position-absolute end-0"
                                     style="margin: 1px;">
@@ -195,7 +195,7 @@
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="overflow-hidden position-relative d-block" href>
+                            <a class="overflow-hidden position-relative d-block" href="#">
                                 <img class="img-fluid" src="{{ asset('img/cat-3.jpg') }}" alt="Category 3">
                                 <div class="bottom-0 px-3 py-2 text-center bg-white position-absolute end-0"
                                     style="margin: 1px;">
@@ -208,7 +208,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="overflow-hidden position-relative d-block h-100" href>
+                    <a class="overflow-hidden position-relative d-block h-100" href="#">
                         <img class="img-fluid position-absolute w-100 h-100" src="{{ asset('img/cat-4.jpg') }}"
                             alt="Category 4" style="object-fit: cover;">
                         <div class="bottom-0 px-3 py-2 text-center bg-white position-absolute end-0"
@@ -365,9 +365,9 @@
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="px-1 pt-2 bg-light d-flex justify-content-center">
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-twitter"></i></a>
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-instagram"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="p-4 text-center">
@@ -383,9 +383,9 @@
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="px-1 pt-2 bg-light d-flex justify-content-center">
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-twitter"></i></a>
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-instagram"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="p-4 text-center">
@@ -401,9 +401,9 @@
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="px-1 pt-2 bg-light d-flex justify-content-center">
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-twitter"></i></a>
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-instagram"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="p-4 text-center">
@@ -419,9 +419,9 @@
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="px-1 pt-2 bg-light d-flex justify-content-center">
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-twitter"></i></a>
-                                <a class="mx-1 btn btn-sm-square btn-primary" href><i class="fab fa-instagram"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-1 btn btn-sm-square btn-primary" href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="p-4 text-center">
